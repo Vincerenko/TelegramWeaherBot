@@ -3,7 +3,19 @@
   <groupId>itstep</groupId>
   <artifactId>ckj13_san_bot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ckj13_san_bot</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>ckj13_san_bot</name>
   
   <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots -->
 <dependencies>

@@ -17,7 +17,6 @@ public class Bot extends TelegramLongPollingBot {
 			Message msg = update.getMessage();
 			String text = msg.getText();
 			System.out.println(text);
-
 			// ответ
 			try {
 				text = Weather.getWeather(text);
@@ -37,13 +36,11 @@ public class Bot extends TelegramLongPollingBot {
 			}
 		}
 	}
-
 	// user name
 	public String getBotUsername() {
 		// TODO Auto-generated method stub
 		return "ckj13_san_bot";
 	}
-
 	// токен подключения
 	@Override
 	public String getBotToken() {
